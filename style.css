@@ -1,0 +1,225 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* HEADER */
+  .main-header {
+    background-image: url('../proyecto_landing_composicion/img/fondo_musical.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece un poco para mejor lectura */
+    padding: 50px;
+  }
+  
+  .main-header h1 {
+    font-size: 3rem;
+  }
+  
+  .main-header .subtitle {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #0056b3; /* Azul más intenso */
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #003d80; /* Azul más oscuro */
+  }
+  
+  /* CONTENIDO PRINCIPAL */
+  .content {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* GALERÍA */
+  .gallery {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .gallery h2 {
+    margin-bottom: 30px;
+  }
+  
+  .gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .gallery-images img {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* FOOTER */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  /* FORMULARIO DE INSCRIPCIÓN */
+.form-section {
+    background-color: #e6f0ff; /* Azul muy clarito */
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .form-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-section p {
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .signup-form input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .signup-form button {
+    margin-top: 10px;
+  }
+  /* MENSAJE DE DESCUENTO */
+.discount-message {
+    margin-top: 30px;
+    background-color: #ffe680; /* Amarillo clarito para llamar la atención */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .discount-message p {
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+
+  /* Responsive para formulario */
+  @media (max-width: 480px) {
+    .signup-form input {
+      width: 90%;
+    }
+  }
+  /* TIMER DE DESCUENTO */
+.discount-timer {
+    margin-top: 30px;
+    background-color: #ffe680;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .discount-timer p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .countdown {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #d63333; /* Rojo para dar urgencia */
+    font-weight: bold;
+  }
+  
+
+  
+  /* RESPONSIVE TABLET */
+  @media (max-width: 768px) {
+    .main-header {
+      padding: 70px 15px;
+    }
+  
+    .main-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .main-header .subtitle {
+      font-size: 1.3rem;
+    }
+  
+    .cta-button {
+      padding: 12px 25px;
+      font-size: 1rem;
+    }
+  
+    .gallery-images img {
+      width: 250px;
+    }
+  }
+  
+  /* RESPONSIVE MÓVIL */
+  @media (max-width: 480px) {
+    .main-header {
+      padding: 50px 10px;
+    }
+  
+    .main-header h1 {
+      font-size: 2rem;
+    }
+  
+    .main-header .subtitle {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+  
+    .gallery-images img {
+      width: 200px;
+    }
+  }
+  
