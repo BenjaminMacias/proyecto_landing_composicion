@@ -132,7 +132,7 @@
   /* MENSAJE DE DESCUENTO */
 .discount-message {
     margin-top: 30px;
-    background-color: #ffe680; /* Amarillo clarito para llamar la atención */
+    background-color: #ffe680; /* Amarillo claro para llamar la atención */
     padding: 20px;
     border-radius: 10px;
     display: inline-block;
@@ -173,7 +173,27 @@
     font-weight: bold;
   }
   
-
+  .footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .footer nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .footer nav ul li a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 1rem;
+  }
+  
+  .footer nav ul li a:hover {
+    color: #ffe680; /* Amarillo clarito para efecto hover */
+  }
+  
   
   /* RESPONSIVE TABLET */
   @media (max-width: 768px) {

@@ -3,12 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Curso de Composición Musical</title>
+  <title>Curso de Composición Musical | Crea tu propia canción</title>
+  <meta name="description" content="Aprende a crear tu propia canción con nuestro Curso de Composición Musical. ¡Inscríbete y compón tu primera obra!">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="composición musical, curso de música, crear canciones, aprender música, curso online música">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Curso de Composición Musical | Crea tu propia canción">
+  <meta property="og:description" content="Aprende a crear tu propia canción desde cero en nuestro curso especializado de composición musical. ¡Inscríbete hoy!">
+  <meta property="og:image" content="img/fondo_musical.jpgfondo_musical.jpg">
+  <meta property="og:url" content="https://benjaminmacias.github.io/proyecto_landing_composicion/">
+  <meta property="og:type" content="website">
+  
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- HEADER -->
   <header class="main-header">
     <div class="overlay">
       <h1>Curso de Composición Musical</h1>
@@ -17,71 +28,75 @@
     </div>
   </header>
 
-  <!-- CONTENIDO PRINCIPAL -->
-  <section class="content">
-    <p>Descubre los secretos de la composición musical desde cero. Aprende técnicas, armonía y expresión musical en nuestro curso intensivo. ¡No necesitas experiencia previa!</p>
-  </section>
+  <main>
 
-  <!-- GALERÍA DE IMÁGENES -->
-  <section class="gallery">
-    <h2>Inspírate para crear música</h2>
-    <div class="gallery-images">
-      <img src="img/joven_guitarrra.jpg" alt="Joven tocando guitarra">
-      <img src="img/joven_guitarrra2.jpg" alt="Clase de guitarra en línea">
-    </div>
-  </section>
+    <section class="content">
+      <article>
+        <h2>Descubre tu talento musical</h2>
+        <p>Descubre los secretos de la composición musical desde cero. Aprende técnicas, armonía y expresión musical en nuestro curso intensivo. ¡No necesitas experiencia previa!</p>
+      </article>
+    </section>
 
-<!-- FORMULARIO DE INSCRIPCIÓN -->
-<section id="inscribete" class="form-section">
-    <h2>¡Inscríbete Gratis!</h2>
-    <p>Déjanos tu nombre y correo electrónico para recibir más información sobre el curso.</p>
-    <form class="signup-form" action="#" method="POST">
-      <input type="text" name="name" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu correo electrónico" required>
-      <button type="submit" class="cta-button">¡Quiero inscribirme!</button>
-    </form>
-  
-    <!-- Contador de descuento -->
-    <div class="discount-timer">
-      <p>🎉 ¡Oferta especial! <strong>50% de descuento</strong> si te inscribes en:</p>
-      <div id="countdown" class="countdown">
-        01:00:00
+    <section class="gallery">
+      <h2>Inspírate para crear música</h2>
+      <div class="gallery-images">
+        <img src="img/joven_guitarrra.jpg" alt="Joven tocando guitarra acústica en clase de composición">
+        <img src="img/joven_guitarrra2.jpg" alt="Estudiante de música aprendiendo guitarra en línea">
       </div>
-    </div>
-  </section>
-  
+    </section>
+
+    <section id="inscribete" class="form-section">
+      <h2>¡Inscríbete Gratis!</h2>
+      <p>Déjanos tu nombre y correo electrónico para recibir más información sobre el curso.</p>
+      <form class="signup-form" action="#" method="POST">
+        <input type="text" name="name" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+        <button type="submit" class="cta-button">¡Quiero inscribirme!</button>
+      </form>
+
+      <div class="discount-timer">
+        <p>🎉 ¡Oferta especial! <strong>50% de descuento</strong> si te inscribes en:</p>
+        <div id="countdown" class="countdown">
+          01:00:00
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Curso de Composición Musical. Todos los derechos reservados.</p>
+    <nav>
+      <ul>
+        <li><a href="#inscribete" rel="noopener noreferrer">Inscribirse</a></li>
+      </ul>
+    </nav>
+  </footer>
+
   <!-- Script para contador -->
   <script>
-    // Establecer el tiempo límite: 1 hora desde ahora
     const countdownElement = document.getElementById('countdown');
-    const deadline = new Date().getTime() + 60 * 60 * 1000; // 1 hora en ms
-  
+    const deadline = new Date().getTime() + 60 * 60 * 1000; // 1 hora en milisegundos
+
     const timer = setInterval(function() {
       const now = new Date().getTime();
       const distance = deadline - now;
-  
+
       const hours = Math.floor((distance / (1000 * 60 * 60)));
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
+
       countdownElement.innerHTML = 
         (hours < 10 ? "0" + hours : hours) + ":" +
         (minutes < 10 ? "0" + minutes : minutes) + ":" +
         (seconds < 10 ? "0" + seconds : seconds);
-  
-      // Cuando el contador llega a cero
+
       if (distance < 0) {
         clearInterval(timer);
         countdownElement.innerHTML = "¡Oferta expirada!";
       }
     }, 1000);
   </script>
-  
-  
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>© 2025 Curso de Composición Musical. Todos los derechos reservados.</p>
-  </footer>
 
 </body>
 </html>
